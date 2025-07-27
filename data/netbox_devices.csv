@@ -1,0 +1,3 @@
+Name,Status,Tenant,Site,Location,Rack,Role,Manufacturer,Type,IP Address
+R1,Active,,Dallas-DC,,Rack-01,Core Router,Cisco,c7200,
+R1-2,Active,,Dallas-DC,,,Core Router,Cisco,c7200,
