@@ -64,23 +64,33 @@ flowchart LR
 ## 📁 Folder Structure
 
 ```bash
-netbox-scripts/
+NetBox-AutoPush/
+├── README.md
+├── requirements.txt
+├── .gitignore
 │
-├── Project-1_Device_Discovery_Push/
-│   ├── discover_devices.py        # SSH discovery + parsing
-│   ├── netbox_api_push.py         # Push devices/interfaces/IPs to NetBox
-│   ├── config_backup.py           # Save running-config
-│   └── credentials.yaml           # Device SSH details
+├── docker/
+│   ├── netbox-postgres-data.tar.gz
+│   ├── netbox-redis-data.tar.gz
+│   ├── netbox-redis-cache-data.tar.gz
+│   ├── netbox-reports-files.tar.gz
+│   └── netbox-media-files.tar.gz
 │
-├── netbox_utils/
-│   ├── netbox_api_wrapper.py      # Custom NetBox API functions
-│   └── device_templates.py        # Base template for devices
+├── gns3/
+│   └── Netboxproject.gns3
 │
-├── backups/                       # Saved running-config files
-├── .env                           # NETBOX_TOKEN and API base URL
-├── requirements.txt               # Python libraries needed
-└── README.md                      # You're reading it!
-```
+├── data/
+│   └── netbox_devices.csv
+│
+├── scripts/
+│   └── discovery_and_push.py
+│
+└── docs/
+    ├── Notes.txt
+    ├── R1 _ NetBox.html
+    ├── Rack Elevations _ NetBox.html
+    └── logo_netbox_bright_teal.svg
+
 
 ---
 
