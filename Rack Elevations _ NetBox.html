@@ -1,0 +1,4014 @@
+<!DOCTYPE html>
+<html lang="en" data-netbox-url-name="rack_elevation_list" data-netbox-version="4.3.4-Docker-3.3.0" data-netbox-user-name="admin" data-netbox-user-id="1" data-bs-theme="light"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=5, width=device-width, viewport-fit=cover">
+    <meta name="htmx-config" content="{&quot;scrollBehavior&quot;: &quot;auto&quot;}">
+    <meta name="hostname" content="769faf36d4d2">
+
+    
+    <title>Rack Elevations | NetBox</title>
+
+    
+    <script type="text/javascript" src="Rack%20Elevations%20_%20NetBox_files/setmode.js" onerror="window.location='/media-failure/?filename=setmode.js'">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        initMode()
+      })();
+      window.CSRF_TOKEN = "rnVt4zu93WpQuT67M2J2dBCpS1iHragZNSiYrwCaL3yiYMckReAg16qicajapOwP";
+    </script>
+
+    
+    <link rel="stylesheet" href="Rack%20Elevations%20_%20NetBox_files/netbox-external.css" onerror="window.location='/media-failure/?filename=netbox-external.css'">
+    <link rel="stylesheet" href="Rack%20Elevations%20_%20NetBox_files/netbox.css" onerror="window.location='/media-failure/?filename=netbox.css'">
+    <link rel="icon" type="image/png" href="http://192.168.206.139:8000/static/netbox.ico">
+    <link rel="apple-touch-icon" type="image/png" href="http://192.168.206.139:8000/static/netbox_touch-icon-180.png">
+
+    
+    <script type="text/javascript" src="Rack%20Elevations%20_%20NetBox_files/netbox.js" onerror="window.location='/media-failure/?filename=netbox.js'">
+    </script>
+    
+
+    
+    
+    
+
+  <style>      .htmx-indicator{opacity:0}      .htmx-request .htmx-indicator{opacity:1; transition: opacity 200ms ease-in;}      .htmx-request.htmx-indicator{opacity:1; transition: opacity 200ms ease-in;}      </style></head>
+  <body data-sidenav-show="" data-sidenav-pinned="" data-bs-theme="light">
+
+    
+    
+
+  <div class="page">
+
+    
+    <aside class="navbar navbar-vertical navbar-expand-lg d-print-none">
+
+      
+
+      <div class="container-fluid">
+
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <h1 class="navbar-brand pb-0">
+          <a href="http://192.168.206.139:8000/">
+            <img src="Rack%20Elevations%20_%20NetBox_files/logo_netbox_dark_teal.svg" alt="NetBox Logo" class="navbar-brand-image hide-theme-dark">
+            <img src="Rack%20Elevations%20_%20NetBox_files/logo_netbox_bright_teal.svg" alt="NetBox Logo" class="navbar-brand-image hide-theme-light">
+            <div class="netbox-edition fw-semibold text-center fs-5 my-1">Community</div>
+          </a>
+        </h1>
+
+        
+        <div class="navbar-nav flex-row align-items-center d-lg-none">
+          
+          
+
+<div class="d-flex ms-2">
+  <button class="btn color-mode-toggle hide-theme-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Enable dark mode" data-bs-original-title="Enable dark mode">
+    <i class="mdi mdi-lightbulb"></i>
+  </button>
+  <button class="btn color-mode-toggle hide-theme-light" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Enable light mode" data-bs-original-title="Enable light mode">
+    <i class="mdi mdi-lightbulb-on"></i>
+  </button>
+</div>
+
+          
+
+
+
+
+
+  
+  
+    <div class="dropdown">
+      <a href="#" class="nav-link px-1" data-bs-toggle="dropdown" hx-get="/extras/notifications/" hx-target="next .notifications" aria-label="Notifications">
+        
+  <span class="text-muted" id="notifications-alert" hx-swap-oob="true">
+    <i class="mdi mdi-bell"></i>
+  </span>
+
+
+      </a>
+      <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"></div>
+    </div>
+  
+
+  
+  <div class="nav-item dropdown">
+    <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+      <div class="d-xl-block ps-2">
+        <div>admin</div>
+        <div class="mt-1 small text-secondary">
+          
+            Admin
+          
+        </div>
+      </div>
+    </a>
+    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+      <a href="http://192.168.206.139:8000/user/profile/" class="dropdown-item">
+        <i class="mdi mdi-account"></i> Profile
+      </a>
+      <a href="http://192.168.206.139:8000/user/bookmarks/" class="dropdown-item">
+        <i class="mdi mdi-bookmark"></i> Bookmarks
+      </a>
+      <a href="http://192.168.206.139:8000/user/subscriptions/" class="dropdown-item">
+        <i class="mdi mdi-bell"></i> Subscriptions
+      </a>
+      <a href="http://192.168.206.139:8000/user/preferences/" class="dropdown-item">
+        <i class="mdi mdi-wrench"></i> Preferences
+      </a>
+      <a href="http://192.168.206.139:8000/user/api-tokens/" class="dropdown-item">
+        <i class="mdi mdi-key"></i> API Tokens
+      </a>
+      <hr class="dropdown-divider">
+      <a href="http://192.168.206.139:8000/logout/" hx-disable="true" class="dropdown-item">
+        <i class="mdi mdi-logout-variant"></i> Log Out
+      </a>
+    </div>
+  </div>
+
+
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="sidebar-menu">
+          
+
+
+
+<ul class="navbar-nav pt-lg-2">
+  <li class="nav-item d-block d-lg-none">
+    <form action="/search/" method="get" autocomplete="off" novalidate="">
+      <div class="input-group mb-1 mt-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="mdi mdi-magnify"></i>
+          </span>
+        </div>
+        <input type="text" name="q" class="form-control" placeholder="Search…" aria-label="Search NetBox">
+        <div class="input-group-append">
+          <button type="submit" class="form-control">Search</button>
+        </div>
+      </div>
+    </form>
+  </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-domain"></i>
+        </span>
+        <span class="nav-link-title">
+          Organization
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Sites
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/regions/" class="d-inline-flex flex-fill py-1">Regions</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/regions/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/regions/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/site-groups/" class="d-inline-flex flex-fill py-1">Site Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/site-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/site-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/sites/" class="d-inline-flex flex-fill py-1">Sites</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/sites/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/sites/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/locations/" class="d-inline-flex flex-fill py-1">Locations</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/locations/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/locations/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Tenancy
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/tenancy/tenants/" class="d-inline-flex flex-fill py-1">Tenants</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/tenants/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/tenants/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/tenancy/tenant-groups/" class="d-inline-flex flex-fill py-1">Tenant Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/tenant-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/tenant-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Contacts
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/tenancy/contacts/" class="d-inline-flex flex-fill py-1">Contacts</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/contacts/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/contacts/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/tenancy/contact-groups/" class="d-inline-flex flex-fill py-1">Contact Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/contact-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/contact-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/tenancy/contact-roles/" class="d-inline-flex flex-fill py-1">Contact Roles</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/contact-roles/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/contact-roles/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/tenancy/contact-assignments/" class="d-inline-flex flex-fill py-1">Contact Assignments</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/tenancy/contact-assignments/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown active">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="true">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-door-sliding"></i>
+        </span>
+        <span class="nav-link-title">
+          Racks
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu show">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Racks
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/racks/" class="d-inline-flex flex-fill py-1">Racks</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/racks/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/racks/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/rack-roles/" class="d-inline-flex flex-fill py-1">Rack Roles</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rack-roles/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rack-roles/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/rack-reservations/" class="d-inline-flex flex-fill py-1">Reservations</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rack-reservations/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rack-reservations/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0 active">
+                  <a href="http://192.168.206.139:8000/dcim/rack-elevations/" class="d-inline-flex flex-fill py-1">Elevations</a>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Rack Types
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/rack-types/" class="d-inline-flex flex-fill py-1">Rack Types</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rack-types/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rack-types/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-server"></i>
+        </span>
+        <span class="nav-link-title">
+          Devices
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Devices
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/devices/" class="d-inline-flex flex-fill py-1">Devices</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/devices/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/devices/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/modules/" class="d-inline-flex flex-fill py-1">Modules</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/modules/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/modules/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/device-roles/" class="d-inline-flex flex-fill py-1">Device Roles</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/device-roles/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/device-roles/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/platforms/" class="d-inline-flex flex-fill py-1">Platforms</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/platforms/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/platforms/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/virtual-chassis/" class="d-inline-flex flex-fill py-1">Virtual Chassis</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/virtual-chassis/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/virtual-chassis/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/virtual-device-contexts/" class="d-inline-flex flex-fill py-1">Virtual Device Contexts</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/virtual-device-contexts/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/virtual-device-contexts/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Device Types
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/device-types/" class="d-inline-flex flex-fill py-1">Device Types</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/device-types/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/device-types/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/module-types/" class="d-inline-flex flex-fill py-1">Module Types</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/module-types/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/module-types/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/module-type-profiles/" class="d-inline-flex flex-fill py-1">Module Type Profiles</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/module-type-profiles/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/module-type-profiles/bulk_import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/manufacturers/" class="d-inline-flex flex-fill py-1">Manufacturers</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/manufacturers/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/manufacturers/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Device Components
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/interfaces/" class="d-inline-flex flex-fill py-1">Interfaces</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/interfaces/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/interfaces/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/front-ports/" class="d-inline-flex flex-fill py-1">Front Ports</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/front-ports/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/front-ports/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/rear-ports/" class="d-inline-flex flex-fill py-1">Rear Ports</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rear-ports/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/rear-ports/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/console-ports/" class="d-inline-flex flex-fill py-1">Console Ports</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/console-ports/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/console-ports/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/console-server-ports/" class="d-inline-flex flex-fill py-1">Console Server Ports</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/console-server-ports/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/console-server-ports/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/power-ports/" class="d-inline-flex flex-fill py-1">Power Ports</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-ports/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-ports/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/power-outlets/" class="d-inline-flex flex-fill py-1">Power Outlets</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-outlets/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-outlets/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/module-bays/" class="d-inline-flex flex-fill py-1">Module Bays</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/module-bays/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/module-bays/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/device-bays/" class="d-inline-flex flex-fill py-1">Device Bays</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/device-bays/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/device-bays/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/inventory-items/" class="d-inline-flex flex-fill py-1">Inventory Items</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/inventory-items/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/inventory-items/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/inventory-item-roles/" class="d-inline-flex flex-fill py-1">Inventory Item Roles</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/inventory-item-roles/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/inventory-item-roles/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Addressing
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/mac-addresses/" class="d-inline-flex flex-fill py-1">MAC Addresses</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/mac-addresses/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/mac-addresses/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-connection"></i>
+        </span>
+        <span class="nav-link-title">
+          Connections
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Connections
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/cables/" class="d-inline-flex flex-fill py-1">Cables</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/cables/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/cables/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/wireless/wireless-links/" class="d-inline-flex flex-fill py-1">Wireless Links</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/wireless/wireless-links/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/wireless/wireless-links/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/interface-connections/" class="d-inline-flex flex-fill py-1">Interface Connections</a>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/console-connections/" class="d-inline-flex flex-fill py-1">Console Connections</a>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/power-connections/" class="d-inline-flex flex-fill py-1">Power Connections</a>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-wifi"></i>
+        </span>
+        <span class="nav-link-title">
+          Wireless
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Wireless
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/wireless/wireless-lans/" class="d-inline-flex flex-fill py-1">Wireless LANs</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/wireless/wireless-lans/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/wireless/wireless-lans/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/wireless/wireless-lan-groups/" class="d-inline-flex flex-fill py-1">Wireless LAN Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/wireless/wireless-lan-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/wireless/wireless-lan-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-counter"></i>
+        </span>
+        <span class="nav-link-title">
+          IPAM
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                IP Addresses
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/ip-addresses/" class="d-inline-flex flex-fill py-1">IP Addresses</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/ip-addresses/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/ip-addresses/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/ip-ranges/" class="d-inline-flex flex-fill py-1">IP Ranges</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/ip-ranges/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/ip-ranges/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Prefixes
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/prefixes/" class="d-inline-flex flex-fill py-1">Prefixes</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/prefixes/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/prefixes/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/roles/" class="d-inline-flex flex-fill py-1">Prefix &amp; VLAN Roles</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/roles/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/roles/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                ASNs
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/asn-ranges/" class="d-inline-flex flex-fill py-1">ASN Ranges</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/asn-ranges/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/asn-ranges/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/asns/" class="d-inline-flex flex-fill py-1">ASNs</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/asns/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/asns/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Aggregates
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/aggregates/" class="d-inline-flex flex-fill py-1">Aggregates</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/aggregates/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/aggregates/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/rirs/" class="d-inline-flex flex-fill py-1">RIRs</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/rirs/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/rirs/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                VRFs
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/vrfs/" class="d-inline-flex flex-fill py-1">VRFs</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vrfs/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vrfs/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/route-targets/" class="d-inline-flex flex-fill py-1">Route Targets</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/route-targets/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/route-targets/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                VLANs
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/vlans/" class="d-inline-flex flex-fill py-1">VLANs</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlans/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlans/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/vlan-groups/" class="d-inline-flex flex-fill py-1">VLAN Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlan-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlan-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/vlan-translation-policies/" class="d-inline-flex flex-fill py-1">VLAN Translation Policies</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlan-translation-policies/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlan-translation-policies/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/vlan-translation-rules/" class="d-inline-flex flex-fill py-1">VLAN Translation Rules</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlan-translation-rules/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/vlan-translation-rules/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Other
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/fhrp-groups/" class="d-inline-flex flex-fill py-1">FHRP Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/fhrp-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/fhrp-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/service-templates/" class="d-inline-flex flex-fill py-1">Service Templates</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/service-templates/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/service-templates/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/ipam/services/" class="d-inline-flex flex-fill py-1">Services</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/ipam/services/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/ipam/services/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-graph-outline"></i>
+        </span>
+        <span class="nav-link-title">
+          VPN
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Tunnels
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/tunnels/" class="d-inline-flex flex-fill py-1">Tunnels</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/tunnels/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/tunnels/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/tunnel-groups/" class="d-inline-flex flex-fill py-1">Tunnel Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/tunnel-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/tunnel-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/tunnel-terminations/" class="d-inline-flex flex-fill py-1">Tunnel Terminations</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/tunnel-terminations/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/tunnel-terminations/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                L2VPNs
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/l2vpns/" class="d-inline-flex flex-fill py-1">L2VPNs</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/l2vpns/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/l2vpns/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/l2vpn-terminations/" class="d-inline-flex flex-fill py-1">Terminations</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/l2vpn-terminations/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/l2vpn-terminations/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Security
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/ike-proposals/" class="d-inline-flex flex-fill py-1">IKE Proposals</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ike-proposals/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ike-proposals/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/ike-policies/" class="d-inline-flex flex-fill py-1">IKE Policies</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ike-policies/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ike-policies/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/ipsec-proposals/" class="d-inline-flex flex-fill py-1">IPSec Proposals</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ipsec-proposals/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ipsec-proposals/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/ipsec-policies/" class="d-inline-flex flex-fill py-1">IPSec Policies</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ipsec-policies/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ipsec-policies/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/vpn/ipsec-profiles/" class="d-inline-flex flex-fill py-1">IPSec Profiles</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ipsec-profiles/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/vpn/ipsec-profiles/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-monitor"></i>
+        </span>
+        <span class="nav-link-title">
+          Virtualization
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Virtual Machines
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/virtualization/virtual-machines/" class="d-inline-flex flex-fill py-1">Virtual Machines</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/virtual-machines/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/virtual-machines/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/virtualization/interfaces/" class="d-inline-flex flex-fill py-1">Interfaces</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/interfaces/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/interfaces/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/virtualization/virtual-disks/" class="d-inline-flex flex-fill py-1">Virtual Disks</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/virtual-disks/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/virtual-disks/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Clusters
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/virtualization/clusters/" class="d-inline-flex flex-fill py-1">Clusters</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/clusters/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/clusters/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/virtualization/cluster-types/" class="d-inline-flex flex-fill py-1">Cluster Types</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/cluster-types/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/cluster-types/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/virtualization/cluster-groups/" class="d-inline-flex flex-fill py-1">Cluster Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/cluster-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/virtualization/cluster-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-transit-connection-variant"></i>
+        </span>
+        <span class="nav-link-title">
+          Circuits
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Circuits
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/circuits/" class="d-inline-flex flex-fill py-1">Circuits</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuits/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuits/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/circuit-types/" class="d-inline-flex flex-fill py-1">Circuit Types</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-types/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-types/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/circuit-terminations/" class="d-inline-flex flex-fill py-1">Circuit Terminations</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-terminations/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-terminations/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Virtual Circuits
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/virtual-circuits/" class="d-inline-flex flex-fill py-1">Virtual Circuits</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/virtual-circuits/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/virtual-circuits/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/virtual-circuit-types/" class="d-inline-flex flex-fill py-1">Virtual Circuit Types</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/virtual-circuit-types/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/virtual-circuit-types/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/virtual-circuit-terminations/" class="d-inline-flex flex-fill py-1">Virtual Circuit Terminations</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/virtual-circuit-terminations/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/virtual-circuit-terminations/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Groups
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/circuit-groups/" class="d-inline-flex flex-fill py-1">Circuit Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/circuit-group-assignments/" class="d-inline-flex flex-fill py-1">Group Assignments</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-group-assignments/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/circuit-group-assignments/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Providers
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/providers/" class="d-inline-flex flex-fill py-1">Providers</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/providers/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/providers/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/provider-accounts/" class="d-inline-flex flex-fill py-1">Provider Accounts</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/provider-accounts/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/provider-accounts/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/circuits/provider-networks/" class="d-inline-flex flex-fill py-1">Provider Networks</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/circuits/provider-networks/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/circuits/provider-networks/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-flash"></i>
+        </span>
+        <span class="nav-link-title">
+          Power
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Power
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/power-feeds/" class="d-inline-flex flex-fill py-1">Power Feeds</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-feeds/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-feeds/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/dcim/power-panels/" class="d-inline-flex flex-fill py-1">Power Panels</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-panels/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/dcim/power-panels/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-file-document-multiple-outline"></i>
+        </span>
+        <span class="nav-link-title">
+          Provisioning
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Configurations
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/config-contexts/" class="d-inline-flex flex-fill py-1">Config Contexts</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/config-contexts/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/config-templates/" class="d-inline-flex flex-fill py-1">Config Templates</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/config-templates/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-toolbox-outline"></i>
+        </span>
+        <span class="nav-link-title">
+          Customization
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Customization
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/custom-fields/" class="d-inline-flex flex-fill py-1">Custom Fields</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/custom-fields/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/custom-fields/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/custom-field-choices/" class="d-inline-flex flex-fill py-1">Custom Field Choices</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/custom-field-choices/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/custom-field-choices/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/custom-links/" class="d-inline-flex flex-fill py-1">Custom Links</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/custom-links/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/custom-links/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/export-templates/" class="d-inline-flex flex-fill py-1">Export Templates</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/export-templates/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/export-templates/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/saved-filters/" class="d-inline-flex flex-fill py-1">Saved Filters</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/saved-filters/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/saved-filters/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/table-configs/" class="d-inline-flex flex-fill py-1">Table Configs</a>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/tags/" class="d-inline-flex flex-fill py-1">Tags</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/tags/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/tags/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/image-attachments/" class="d-inline-flex flex-fill py-1">Image Attachments</a>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Scripts
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/scripts/" class="d-inline-flex flex-fill py-1">Scripts</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/scripts/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-cogs"></i>
+        </span>
+        <span class="nav-link-title">
+          Operations
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Integrations
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/core/data-sources/" class="d-inline-flex flex-fill py-1">Data Sources</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/core/data-sources/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/core/data-sources/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/event-rules/" class="d-inline-flex flex-fill py-1">Event Rules</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/event-rules/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/event-rules/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/webhooks/" class="d-inline-flex flex-fill py-1">Webhooks</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/webhooks/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/webhooks/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Jobs
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/core/jobs/" class="d-inline-flex flex-fill py-1">Jobs</a>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Logging
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/notification-groups/" class="d-inline-flex flex-fill py-1">Notification Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/notification-groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/extras/notification-groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/extras/journal-entries/" class="d-inline-flex flex-fill py-1">Journal Entries</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/extras/journal-entries/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/core/changelog/" class="d-inline-flex flex-fill py-1">Change Log</a>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+    <li class="nav-item dropdown">
+
+      
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+        <span class="nav-link-icon d-md-none d-lg-inline-block">
+          <i class="mdi mdi-account-multiple"></i>
+        </span>
+        <span class="nav-link-title">
+          Admin
+        </span>
+      </a>
+
+      
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-columns">
+          <div class="dropdown-menu-column pb-2">
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                Authentication
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/users/users/" class="d-inline-flex flex-fill py-1">Users</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/users/users/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/users/users/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/users/groups/" class="d-inline-flex flex-fill py-1">Groups</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/users/groups/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/users/groups/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/users/tokens/" class="d-inline-flex flex-fill py-1">API Tokens</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/users/tokens/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                        <a href="http://192.168.206.139:8000/users/tokens/import/" class="btn btn-sm btn-outline lh-2 px-2" title="Import">
+                          <i class="mdi mdi-upload"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/users/permissions/" class="d-inline-flex flex-fill py-1">Permissions</a>
+                  
+                    <div class="btn-group ms-1">
+                      
+                        <a href="http://192.168.206.139:8000/users/permissions/add/" class="btn btn-sm btn-outline lh-2 px-2" title="Add">
+                          <i class="mdi mdi-plus-thick"></i>
+                        </a>
+                      
+                    </div>
+                  
+                </div>
+              
+            
+              <div class="text-uppercase text-secondary fw-bold fs-5 ps-3 pt-3 pb-1">
+                System
+              </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/core/system/" class="d-inline-flex flex-fill py-1">System</a>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/core/plugins/" class="d-inline-flex flex-fill py-1">Plugins</a>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/core/config-revisions/" class="d-inline-flex flex-fill py-1">Configuration History</a>
+                  
+                </div>
+              
+                <div class="dropdown-item d-flex justify-content-between ps-3 py-0">
+                  <a href="http://192.168.206.139:8000/core/background-queues/" class="d-inline-flex flex-fill py-1">Background Tasks</a>
+                  
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+
+    </li>
+  
+</ul>
+
+
+          
+          <div class="text-muted text-center fs-5 my-3">
+            NetBox Community v4.3.4-Docker-3.3.0
+            
+              <div>
+                <a href="https://netboxlabs.com/netbox-cloud/" class="text-muted">Get Cloud</a> |
+                <a href="https://netboxlabs.com/netbox-enterprise/" class="text-muted">Get Enterprise</a>
+              </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </aside>
+
+    
+    <header class="navbar navbar-expand-md sticky-top d-none d-lg-flex d-print-none">
+      <div class="container-fluid">
+
+        
+        <div class="navbar-nav flex-row align-items-center order-md-last">
+          
+          
+
+<div class="d-flex ms-2">
+  <button class="btn color-mode-toggle hide-theme-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Enable dark mode" data-bs-original-title="Enable dark mode">
+    <i class="mdi mdi-lightbulb"></i>
+  </button>
+  <button class="btn color-mode-toggle hide-theme-light" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Enable light mode" data-bs-original-title="Enable light mode">
+    <i class="mdi mdi-lightbulb-on"></i>
+  </button>
+</div>
+
+          
+
+
+
+
+
+  
+  
+    <div class="dropdown">
+      <a href="#" class="nav-link px-1" data-bs-toggle="dropdown" hx-get="/extras/notifications/" hx-target="next .notifications" aria-label="Notifications">
+        
+  <span class="text-muted" id="notifications-alert" hx-swap-oob="true">
+    <i class="mdi mdi-bell"></i>
+  </span>
+
+
+      </a>
+      <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"></div>
+    </div>
+  
+
+  
+  <div class="nav-item dropdown">
+    <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+      <div class="d-xl-block ps-2">
+        <div>admin</div>
+        <div class="mt-1 small text-secondary">
+          
+            Admin
+          
+        </div>
+      </div>
+    </a>
+    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+      <a href="http://192.168.206.139:8000/user/profile/" class="dropdown-item">
+        <i class="mdi mdi-account"></i> Profile
+      </a>
+      <a href="http://192.168.206.139:8000/user/bookmarks/" class="dropdown-item">
+        <i class="mdi mdi-bookmark"></i> Bookmarks
+      </a>
+      <a href="http://192.168.206.139:8000/user/subscriptions/" class="dropdown-item">
+        <i class="mdi mdi-bell"></i> Subscriptions
+      </a>
+      <a href="http://192.168.206.139:8000/user/preferences/" class="dropdown-item">
+        <i class="mdi mdi-wrench"></i> Preferences
+      </a>
+      <a href="http://192.168.206.139:8000/user/api-tokens/" class="dropdown-item">
+        <i class="mdi mdi-key"></i> API Tokens
+      </a>
+      <hr class="dropdown-divider">
+      <a href="http://192.168.206.139:8000/logout/" hx-disable="true" class="dropdown-item">
+        <i class="mdi mdi-logout-variant"></i> Log Out
+      </a>
+    </div>
+  </div>
+
+
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <form action="/search/" method="get" autocomplete="off" novalidate="">
+            <div class="input-icon">
+              <span class="input-icon-addon">
+                <i class="mdi mdi-magnify"></i>
+              </span>
+              <input type="text" name="q" class="form-control" placeholder="Search…" aria-label="Search NetBox">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </header>
+
+    
+    <div class="page-wrapper">
+      <div id="page-content">
+
+      
+      
+  <div class="page-header m-0">
+    
+
+        
+        
+        
+
+        
+        
+
+        
+        
+
+      
+
+    
+      <div class="container-fluid mt-2 d-print-none">
+        <div class="d-flex justify-content-between">
+
+          
+          <div>
+            <h1 class="page-title">Rack Elevations</h1>
+            
+          </div>
+
+          
+          <div class="d-print-none">
+            
+  <div class="col-auto d-print-none">
+    <div class="btn-list">
+      <a href="http://192.168.206.139:8000/dcim/racks/" class="btn btn-primary">
+        <i class="mdi mdi-format-list-checkbox"></i> View List
+      </a>
+      <select class="btn btn-outline-secondary no-ts rack-view" aria-label="Select rack view">
+        <option value="images-and-labels" selected="selected">Images and Labels</option>
+        <option value="images-only">Images only</option>
+        <option value="labels-only">Labels only</option>
+      </select>
+      <div class="btn-group" role="group">
+        <a href="http://192.168.206.139:8000/dcim/rack-elevations/?face=front" class="btn btn-outline-secondary active">Front</a>
+        <a href="http://192.168.206.139:8000/dcim/rack-elevations/?face=rear" class="btn btn-outline-secondary">Rear</a>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="mdi mdi-sort"></i> Sort By Name (A-Z)
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          
+            <li><a class="dropdown-item active" href="http://192.168.206.139:8000/dcim/rack-elevations/?sort=name">Name (A-Z)</a></li>
+          
+            <li><a class="dropdown-item" href="http://192.168.206.139:8000/dcim/rack-elevations/?sort=-name">Name (Z-A)</a></li>
+          
+            <li><a class="dropdown-item" href="http://192.168.206.139:8000/dcim/rack-elevations/?sort=facility_id">Facility ID (A-Z)</a></li>
+          
+            <li><a class="dropdown-item" href="http://192.168.206.139:8000/dcim/rack-elevations/?sort=-facility_id">Facility ID (Z-A)</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+          </div>
+
+        </div>
+      </div>
+    
+
+    
+    <div class="page-tabs mt-3">
+      <div class="container-fluid">
+        
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="object-list-tab" data-bs-toggle="tab" data-bs-target="#object-list" type="button" role="tab" aria-controls="edit-form" aria-selected="true">
+        Results
+        <span class="badge text-bg-secondary total-object-count">1</span>
+      </a>
+    </li>
+    
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="filters-form-tab" data-bs-toggle="tab" data-bs-target="#filters-form" type="button" role="tab" aria-controls="object-list" aria-selected="false" tabindex="-1">
+          Filters
+          
+
+        </button>
+      </li>
+    
+  </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+      
+
+      
+      
+        <div class="page-body my-1">
+          <div class="container-fluid tab-content py-3">
+
+            
+            
+            
+
+            
+            
+
+  
+    
+
+
+  
+
+  
+  <div class="tab-pane show active" id="object-list" role="tabpanel" aria-labelledby="object-list-tab">
+    
+        <div style="white-space: nowrap; overflow-x: scroll;">
+            
+                <div style="display: inline-block; margin-right: 12px">
+                <div style="margin-left: 30px">
+                    <div class="text-center">
+                        <strong><a href="http://192.168.206.139:8000/dcim/racks/1/">Rack-01</a></strong>
+                        
+                        
+                    </div>
+                    
+<div style="margin-left: -30px">
+  <svg baseProfile="full" height="928" version="1.1" width="269" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xlink="http://www.w3.org/1999/xlink" class=""><defs><style type="text/css">svg{--
+nbx-rack-bg: var(--tblr-bg-surface-secondary);--nbx-rack-border: 
+#000;--nbx-rack-slot-bg: #e9ecef;--nbx-rack-slot-border: 
+#adb5bd;--nbx-rack-slot-hover-bg: #ced4da;--nbx-rack-link-color: 
+#0d6efd;--nbx-rack-unit-color: 
+#6c757d}svg[data-bs-theme=dark]{--nbx-rack-bg: rgb(27, 41, 
+58);--nbx-rack-border: #6c757d;--nbx-rack-slot-bg: 
+#343a40;--nbx-rack-slot-border: #495057;--nbx-rack-slot-hover-bg: 
+#212529;--nbx-rack-link-color: #9ec5fe;--nbx-rack-unit-color: 
+#adb5bd}*{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica 
+Neue,Noto Sans,Liberation Sans,Arial,sans-serif,"Apple Color 
+Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color 
+Emoji";font-size:.875rem}rect{box-sizing:border-box}text{text-
+anchor:middle;dominant-baseline:middle}svg{background-color:var(--nbx-
+rack-bg)}svg .unit{margin:0;padding:5px 
+0;fill:var(--nbx-rack-unit-color)}svg .hidden{visibility:hidden}svg 
+rect.shaded,svg image.shaded{opacity:25%}svg text.shaded{opacity:50%}svg
+ .rack{fill:none;stroke-width:2px;stroke:var(--nbx-rack-border)}svg 
+.slot{fill:var(--nbx-rack-slot-bg);stroke:var(--nbx-rack-slot-border)}
+svg .slot:hover{fill:var(--nbx-rack-slot-hover-bg)}svg 
+.slot+.add-device{fill:var(--nbx-rack-link-color);opacity:0;pointer-
+events:none}svg .slot:hover+.add-device{opacity:1}svg 
+.slot.occupied[class],svg 
+.slot.occupied:hover[class]{fill:url(#occupied)}svg 
+.slot.blocked[class],svg 
+.slot.blocked:hover[class]{fill:url(#blocked)}svg 
+.slot.blocked:hover+.add-device{opacity:0}svg 
+.reservation[class]{fill:url(#reserved)}
+</style><linearGradient gradientTransform="rotate(45, 0, 0)" gradientUnits="userSpaceOnUse" id="reserved" spreadMethod="repeat" x1="0" x2="0" y1="0" y2="25"><stop offset="0%" stop-color="#f7f7f7"></stop><stop offset="50%" stop-color="#f7f7f7"></stop><stop offset="50%" stop-color="#b0b0ff"></stop><stop offset="100%" stop-color="#b0b0ff"></stop></linearGradient><linearGradient gradientTransform="rotate(45, 0, 0)" gradientUnits="userSpaceOnUse" id="occupied" spreadMethod="repeat" x1="0" x2="0" y1="0" y2="25"><stop offset="0%" stop-color="#f7f7f7"></stop><stop offset="50%" stop-color="#f7f7f7"></stop><stop offset="50%" stop-color="#d7d7d7"></stop><stop offset="100%" stop-color="#d7d7d7"></stop></linearGradient><linearGradient gradientTransform="rotate(45, 0, 0)" gradientUnits="userSpaceOnUse" id="blocked" spreadMethod="repeat" x1="0" x2="0" y1="0" y2="25"><stop offset="0%" stop-color="#f7f7f7"></stop><stop offset="50%" stop-color="#f7f7f7"></stop><stop offset="50%" stop-color="#ffc0c0"></stop><stop offset="100%" stop-color="#ffc0c0"></stop></linearGradient></defs><text class="unit" x="15.0" y="15.0">42</text><text class="unit" x="15.0" y="37.0">41</text><text class="unit" x="15.0" y="59.0">40</text><text class="unit" x="15.0" y="81.0">39</text><text class="unit" x="15.0" y="103.0">38</text><text class="unit" x="15.0" y="125.0">37</text><text class="unit" x="15.0" y="147.0">36</text><text class="unit" x="15.0" y="169.0">35</text><text class="unit" x="15.0" y="191.0">34</text><text class="unit" x="15.0" y="213.0">33</text><text class="unit" x="15.0" y="235.0">32</text><text class="unit" x="15.0" y="257.0">31</text><text class="unit" x="15.0" y="279.0">30</text><text class="unit" x="15.0" y="301.0">29</text><text class="unit" x="15.0" y="323.0">28</text><text class="unit" x="15.0" y="345.0">27</text><text class="unit" x="15.0" y="367.0">26</text><text class="unit" x="15.0" y="389.0">25</text><text class="unit" x="15.0" y="411.0">24</text><text class="unit" x="15.0" y="433.0">23</text><text class="unit" x="15.0" y="455.0">22</text><text class="unit" x="15.0" y="477.0">21</text><text class="unit" x="15.0" y="499.0">20</text><text class="unit" x="15.0" y="521.0">19</text><text class="unit" x="15.0" y="543.0">18</text><text class="unit" x="15.0" y="565.0">17</text><text class="unit" x="15.0" y="587.0">16</text><text class="unit" x="15.0" y="609.0">15</text><text class="unit" x="15.0" y="631.0">14</text><text class="unit" x="15.0" y="653.0">13</text><text class="unit" x="15.0" y="675.0">12</text><text class="unit" x="15.0" y="697.0">11</text><text class="unit" x="15.0" y="719.0">10</text><text class="unit" x="15.0" y="741.0">9</text><text class="unit" x="15.0" y="763.0">8</text><text class="unit" x="15.0" y="785.0">7</text><text class="unit" x="15.0" y="807.0">6</text><text class="unit" x="15.0" y="829.0">5</text><text class="unit" x="15.0" y="851.0">4</text><text class="unit" x="15.0" y="873.0">3</text><text class="unit" x="15.0" y="895.0">2</text><text class="unit" x="15.0" y="917.0">1</text><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=42"><rect class="slot" height="22" width="220" x="32" y="2"></rect><text class="add-device" x="142.0" y="13.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=41"><rect class="slot" height="22" width="220" x="32" y="24"></rect><text class="add-device" x="142.0" y="35.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=40"><rect class="slot" height="22" width="220" x="32" y="46"></rect><text class="add-device" x="142.0" y="57.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=39"><rect class="slot" height="22" width="220" x="32" y="68"></rect><text class="add-device" x="142.0" y="79.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=38"><rect class="slot" height="22" width="220" x="32" y="90"></rect><text class="add-device" x="142.0" y="101.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=37"><rect class="slot" height="22" width="220" x="32" y="112"></rect><text class="add-device" x="142.0" y="123.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=36"><rect class="slot" height="22" width="220" x="32" y="134"></rect><text class="add-device" x="142.0" y="145.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=35"><rect class="slot" height="22" width="220" x="32" y="156"></rect><text class="add-device" x="142.0" y="167.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=34"><rect class="slot" height="22" width="220" x="32" y="178"></rect><text class="add-device" x="142.0" y="189.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=33"><rect class="slot" height="22" width="220" x="32" y="200"></rect><text class="add-device" x="142.0" y="211.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=32"><rect class="slot" height="22" width="220" x="32" y="222"></rect><text class="add-device" x="142.0" y="233.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=31"><rect class="slot" height="22" width="220" x="32" y="244"></rect><text class="add-device" x="142.0" y="255.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=30"><rect class="slot" height="22" width="220" x="32" y="266"></rect><text class="add-device" x="142.0" y="277.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=29"><rect class="slot" height="22" width="220" x="32" y="288"></rect><text class="add-device" x="142.0" y="299.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=28"><rect class="slot" height="22" width="220" x="32" y="310"></rect><text class="add-device" x="142.0" y="321.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=27"><rect class="slot" height="22" width="220" x="32" y="332"></rect><text class="add-device" x="142.0" y="343.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=26"><rect class="slot" height="22" width="220" x="32" y="354"></rect><text class="add-device" x="142.0" y="365.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=25"><rect class="slot" height="22" width="220" x="32" y="376"></rect><text class="add-device" x="142.0" y="387.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=24"><rect class="slot" height="22" width="220" x="32" y="398"></rect><text class="add-device" x="142.0" y="409.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=23"><rect class="slot" height="22" width="220" x="32" y="420"></rect><text class="add-device" x="142.0" y="431.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=22"><rect class="slot" height="22" width="220" x="32" y="442"></rect><text class="add-device" x="142.0" y="453.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=21"><rect class="slot" height="22" width="220" x="32" y="464"></rect><text class="add-device" x="142.0" y="475.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=20"><rect class="slot" height="22" width="220" x="32" y="486"></rect><text class="add-device" x="142.0" y="497.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=19"><rect class="slot" height="22" width="220" x="32" y="508"></rect><text class="add-device" x="142.0" y="519.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=18"><rect class="slot" height="22" width="220" x="32" y="530"></rect><text class="add-device" x="142.0" y="541.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=17"><rect class="slot" height="22" width="220" x="32" y="552"></rect><text class="add-device" x="142.0" y="563.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=16"><rect class="slot" height="22" width="220" x="32" y="574"></rect><text class="add-device" x="142.0" y="585.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=15"><rect class="slot" height="22" width="220" x="32" y="596"></rect><text class="add-device" x="142.0" y="607.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=14"><rect class="slot" height="22" width="220" x="32" y="618"></rect><text class="add-device" x="142.0" y="629.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=13"><rect class="slot" height="22" width="220" x="32" y="640"></rect><text class="add-device" x="142.0" y="651.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=12"><rect class="slot" height="22" width="220" x="32" y="662"></rect><text class="add-device" x="142.0" y="673.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=11"><rect class="slot" height="22" width="220" x="32" y="684"></rect><text class="add-device" x="142.0" y="695.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=10"><rect class="slot" height="22" width="220" x="32" y="706"></rect><text class="add-device" x="142.0" y="717.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=9"><rect class="slot" height="22" width="220" x="32" y="728"></rect><text class="add-device" x="142.0" y="739.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=8"><rect class="slot" height="22" width="220" x="32" y="750"></rect><text class="add-device" x="142.0" y="761.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=7"><rect class="slot" height="22" width="220" x="32" y="772"></rect><text class="add-device" x="142.0" y="783.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=6"><rect class="slot" height="22" width="220" x="32" y="794"></rect><text class="add-device" x="142.0" y="805.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=5"><rect class="slot" height="22" width="220" x="32" y="816"></rect><text class="add-device" x="142.0" y="827.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=4"><rect class="slot" height="22" width="220" x="32" y="838"></rect><text class="add-device" x="142.0" y="849.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=3"><rect class="slot" height="22" width="220" x="32" y="860"></rect><text class="add-device" x="142.0" y="871.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=2"><rect class="slot" height="22" width="220" x="32" y="882"></rect><text class="add-device" x="142.0" y="893.0">add device</text></a><a target="_parent" xlink:href="/dcim/devices/add/?site=1&amp;location=&amp;rack=1&amp;face=front&amp;position=1"><rect class="slot" height="22" width="220" x="32" y="904"></rect><text class="add-device" x="142.0" y="915.0">add device</text></a><a target="_parent" xlink:href="http://192.168.206.139:8000/dcim/devices/1/"><title>Name: R1
+Role: Core Router
+Status: Active
+Device Type: Cisco c7200 (1U)</title><rect class="slot" height="22" style="fill: #8bc34a" width="220" x="32" y="24"></rect><text class="label" fill="#000000" x="142.0" y="35.0">R1</text></a><rect class="rack" height="926" width="222" x="31.0" y="1.0"></rect></svg>
+</div>
+<div class="text-center mt-3">
+    <a class="btn btn-outline-primary" href="http://192.168.206.139:8000/api/dcim/racks/1/elevation/?face=front&amp;render=svg" hx-boost="false">
+        <i class="mdi mdi-file-download"></i> Download SVG
+    </a>
+</div>
+
+                    <div class="clearfix"></div>
+                    <div class="text-center">
+                        <strong><a href="http://192.168.206.139:8000/dcim/racks/1/">Rack-01</a></strong>
+                        
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+        <br>
+        
+
+
+
+  <div class="d-flex justify-content-between align-items-center border-top p-2" hx-target="closest .htmx-container" hx-disinherit="hx-select" hx-swap="outerHTML" hx-push-url="true">
+
+    
+    
+    
+
+    
+    <small class="text-end text-muted">
+      Showing 1-1 of 1
+    </small>
+    
+
+    
+    <nav class="text-end" aria-label="Pagination options">
+      
+        <div class="dropdown">
+          <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Per Page
+          </button>
+          <div class="dropdown-menu">
+            
+              
+                <a href="http://192.168.206.139:8000/dcim/rack-elevations/?per_page=25" class="dropdown-item">25</a>
+              
+            
+              
+                <a href="http://192.168.206.139:8000/dcim/rack-elevations/?per_page=50" class="dropdown-item">50</a>
+              
+            
+              
+                <a href="http://192.168.206.139:8000/dcim/rack-elevations/?per_page=100" class="dropdown-item">100</a>
+              
+            
+              
+                <a href="http://192.168.206.139:8000/dcim/rack-elevations/?per_page=250" class="dropdown-item">250</a>
+              
+            
+              
+                <a href="http://192.168.206.139:8000/dcim/rack-elevations/?per_page=500" class="dropdown-item">500</a>
+              
+            
+              
+                <a href="http://192.168.206.139:8000/dcim/rack-elevations/?per_page=1000" class="dropdown-item">1000</a>
+              
+            
+          </div>
+        </div>
+      
+    </nav>
+    
+
+  </div>
+
+
+    
+  </div>
+
+  
+  
+    <div class="tab-pane show" id="filters-form" role="tabpanel" aria-labelledby="filters-form-tab">
+      
+
+
+
+<form action="." method="get">
+  <div class="card">
+    <div class="card-body overflow-visible d-flex flex-wrap justify-content-between py-3">
+      
+      
+      
+        <div class="col col-12">
+          
+
+<div class="field-group mb-5">
+  
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_q" class="col-form-label d-inline-block">
+        Search
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <input type="text" name="q" id="id_q" class="form-control">
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_filter_id-ts-control" class="col-form-label d-inline-block" id="id_filter_id-ts-label">
+        Saved Filter
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="filter_id" data-static-params="[{&quot;queryParam&quot;:&quot;usable&quot;,&quot;queryValue&quot;:[true]},{&quot;queryParam&quot;:&quot;object_type_id&quot;,&quot;queryValue&quot;:[75]}]" data-url="/api/extras/saved-filters/" id="id_filter_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_filter_id-ts-dropdown" id="id_filter_id-ts-control" aria-labelledby="id_filter_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_filter_id-ts-dropdown" aria-labelledby="id_filter_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_tag-ts-control" class="col-form-label d-inline-block" id="id_tag-ts-label">
+        Tags
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <select name="tag" id="id_tag" multiple="multiple" class="form-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_tag-ts-dropdown" id="id_tag-ts-control" aria-labelledby="id_tag-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_tag-ts-dropdown" aria-labelledby="id_tag-ts-label"></div></div></div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+</div>
+
+        </div>
+      
+        <div class="col col-12">
+          
+
+<div class="field-group mb-5">
+  
+    <div class="row">
+      <h2 class="col-9 offset-3">Location</h2>
+    </div>
+  
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_region_id-ts-control" class="col-form-label d-inline-block" id="id_region_id-ts-label">
+        Region
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="region_id" data-url="/api/dcim/regions/" id="id_region_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_region_id-ts-dropdown" id="id_region_id-ts-control" aria-labelledby="id_region_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_region_id-ts-dropdown" aria-labelledby="id_region_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_site_group_id-ts-control" class="col-form-label d-inline-block" id="id_site_group_id-ts-label">
+        Site group
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="site_group_id" data-url="/api/dcim/site-groups/" id="id_site_group_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_site_group_id-ts-dropdown" id="id_site_group_id-ts-control" aria-labelledby="id_site_group_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_site_group_id-ts-dropdown" aria-labelledby="id_site_group_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_site_id-ts-control" class="col-form-label d-inline-block" id="id_site_id-ts-label">
+        Site
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="site_id" data-dynamic-params="[{&quot;fieldName&quot;:&quot;region_id&quot;,&quot;queryParam&quot;:&quot;region_id&quot;}]" data-url="/api/dcim/sites/" id="id_site_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_site_id-ts-dropdown" id="id_site_id-ts-control" aria-labelledby="id_site_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_site_id-ts-dropdown" aria-labelledby="id_site_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_location_id-ts-control" class="col-form-label d-inline-block" id="id_location_id-ts-label">
+        Location
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="location_id" data-dynamic-params="[{&quot;fieldName&quot;:&quot;site_id&quot;,&quot;queryParam&quot;:&quot;site_id&quot;}]" data-null-option="None" data-url="/api/dcim/locations/" id="id_location_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+  <option value="null">None</option>
+
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_location_id-ts-dropdown" id="id_location_id-ts-control" aria-labelledby="id_location_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_location_id-ts-dropdown" aria-labelledby="id_location_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_id-ts-control" class="col-form-label d-inline-block" id="id_id-ts-label">
+        Rack
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="id" data-dynamic-params="[{&quot;fieldName&quot;:&quot;site_id&quot;,&quot;queryParam&quot;:&quot;site_id&quot;},{&quot;fieldName&quot;:&quot;location_id&quot;,&quot;queryParam&quot;:&quot;location_id&quot;}]" data-url="/api/dcim/racks/" id="id_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_id-ts-dropdown" id="id_id-ts-control" aria-labelledby="id_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_id-ts-dropdown" aria-labelledby="id_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+</div>
+
+        </div>
+      
+        <div class="col col-12">
+          
+
+<div class="field-group mb-5">
+  
+    <div class="row">
+      <h2 class="col-9 offset-3">Function</h2>
+    </div>
+  
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_status-ts-control" class="col-form-label d-inline-block" id="id_status-ts-label">
+        Status
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <select name="status" id="id_status" multiple="multiple" class="form-select tomselected ts-hidden-accessible" tabindex="-1">
+  <option value="reserved">Reserved</option>
+
+  <option value="available">Available</option>
+
+  <option value="planned">Planned</option>
+
+  <option value="active">Active</option>
+
+  <option value="deprecated">Deprecated</option>
+
+</select><div class="ts-wrapper form-select multi plugin-clear_button plugin-remove_button"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_status-ts-dropdown" id="id_status-ts-control" aria-labelledby="id_status-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_status-ts-dropdown" aria-labelledby="id_status-ts-label"></div></div></div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_role_id-ts-control" class="col-form-label d-inline-block" id="id_role_id-ts-label">
+        Role
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="role_id" data-null-option="None" data-url="/api/dcim/rack-roles/" id="id_role_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+  <option value="null">None</option>
+
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_role_id-ts-dropdown" id="id_role_id-ts-control" aria-labelledby="id_role_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_role_id-ts-dropdown" aria-labelledby="id_role_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+</div>
+
+        </div>
+      
+        <div class="col col-12">
+          
+
+<div class="field-group mb-5">
+  
+    <div class="row">
+      <h2 class="col-9 offset-3">Hardware</h2>
+    </div>
+  
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_width-ts-control" class="col-form-label d-inline-block" id="id_width-ts-label">
+        Width
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <select name="width" id="id_width" multiple="multiple" class="form-select tomselected ts-hidden-accessible" tabindex="-1">
+  <option value="10">10 inches</option>
+
+  <option value="19">19 inches</option>
+
+  <option value="21">21 inches</option>
+
+  <option value="23">23 inches</option>
+
+</select><div class="ts-wrapper form-select multi plugin-clear_button plugin-remove_button"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_width-ts-dropdown" id="id_width-ts-control" aria-labelledby="id_width-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_width-ts-dropdown" aria-labelledby="id_width-ts-label"></div></div></div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_serial" class="col-form-label d-inline-block">
+        Serial
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <input type="text" name="serial" id="id_serial" class="form-control">
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_asset_tag" class="col-form-label d-inline-block">
+        Asset tag
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <input type="text" name="asset_tag" id="id_asset_tag" class="form-control">
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+</div>
+
+        </div>
+      
+        <div class="col col-12">
+          
+
+<div class="field-group mb-5">
+  
+    <div class="row">
+      <h2 class="col-9 offset-3">Tenant</h2>
+    </div>
+  
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_tenant_group_id-ts-control" class="col-form-label d-inline-block" id="id_tenant_group_id-ts-label">
+        Tenant group
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="tenant_group_id" data-null-option="None" data-url="/api/tenancy/tenant-groups/" id="id_tenant_group_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+  <option value="null">None</option>
+
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_tenant_group_id-ts-dropdown" id="id_tenant_group_id-ts-control" aria-labelledby="id_tenant_group_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_tenant_group_id-ts-dropdown" aria-labelledby="id_tenant_group_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_tenant_id-ts-control" class="col-form-label d-inline-block" id="id_tenant_id-ts-label">
+        Tenant
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="tenant_id" data-dynamic-params="[{&quot;fieldName&quot;:&quot;tenant_group_id&quot;,&quot;queryParam&quot;:&quot;group_id&quot;}]" data-null-option="None" data-url="/api/tenancy/tenants/" id="id_tenant_id" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+  <option value="null">None</option>
+
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_tenant_id-ts-dropdown" id="id_tenant_id-ts-control" aria-labelledby="id_tenant_id-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_tenant_id-ts-dropdown" aria-labelledby="id_tenant_id-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+</div>
+
+        </div>
+      
+        <div class="col col-12">
+          
+
+<div class="field-group mb-5">
+  
+    <div class="row">
+      <h2 class="col-9 offset-3">Contacts</h2>
+    </div>
+  
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_contact-ts-control" class="col-form-label d-inline-block" id="id_contact-ts-label">
+        Contact
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="contact" data-url="/api/tenancy/contacts/" id="id_contact" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_contact-ts-dropdown" id="id_contact-ts-control" aria-labelledby="id_contact-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_contact-ts-dropdown" aria-labelledby="id_contact-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_contact_role-ts-control" class="col-form-label d-inline-block" id="id_contact_role-ts-label">
+        Contact Role
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="contact_role" data-url="/api/tenancy/contact-roles/" id="id_contact_role" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_contact_role-ts-dropdown" id="id_contact_role-ts-control" aria-labelledby="id_contact_role-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_contact_role-ts-dropdown" aria-labelledby="id_contact_role-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_contact_group-ts-control" class="col-form-label d-inline-block" id="id_contact_group-ts-label">
+        Contact Group
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <div class="d-flex">
+  <select name="contact_group" data-url="/api/tenancy/contact-groups/" id="id_contact_group" multiple="multiple" class="form-select api-select tomselected ts-hidden-accessible" tabindex="-1">
+</select><div class="ts-wrapper form-select api-select multi plugin-clear_button plugin-remove_button has-options"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_contact_group-ts-dropdown" id="id_contact_group-ts-control" aria-labelledby="id_contact_group-ts-label"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown multi plugin-clear_button plugin-remove_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_contact_group-ts-dropdown" aria-labelledby="id_contact_group-ts-label"></div></div></div>
+  
+  
+</div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+</div>
+
+        </div>
+      
+        <div class="col col-12">
+          
+
+<div class="field-group mb-5">
+  
+    <div class="row">
+      <h2 class="col-9 offset-3">Weight</h2>
+    </div>
+  
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_weight" class="col-form-label d-inline-block">
+        Weight
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <input type="number" name="weight" min="1" step="any" id="id_weight" class="form-control">
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_max_weight" class="col-form-label d-inline-block">
+        Max weight
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <input type="number" name="max_weight" min="1" id="id_max_weight" class="form-control">
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+
+    
+      
+      
+
+
+
+<div class="row mb-3">
+
+  
+  
+    <div class="col-sm-3 text-lg-end">
+      <label for="id_weight_unit-ts-control" class="col-form-label d-inline-block" id="id_weight_unit-ts-label">
+        Weight unit
+      </label>
+    </div>
+  
+
+  
+  <div class="col">
+    
+    
+      <select name="weight_unit" id="id_weight_unit" class="form-select tomselected ts-hidden-accessible" tabindex="-1">
+  <option value="" selected="selected">---------</option>
+
+  <option value="kg">Kilograms</option>
+
+  <option value="g">Grams</option>
+
+  <option value="lb">Pounds</option>
+
+  <option value="oz">Ounces</option>
+
+</select><div class="ts-wrapper form-select single plugin-clear_button"><div class="ts-control"><input type="text" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="id_weight_unit-ts-dropdown" id="id_weight_unit-ts-control" aria-labelledby="id_weight_unit-ts-label" placeholder="---------"><i class="mdi mdi-close-circle clear-button" title="Clear All"></i></div><div class="ts-dropdown single plugin-clear_button" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="id_weight_unit-ts-dropdown" aria-labelledby="id_weight_unit-ts-label"></div></div></div>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+  </div>
+
+</div>
+
+
+    
+  
+</div>
+
+        </div>
+      
+      
+    </div>
+  </div>
+  <div class="btn-float-group-right me-1">
+    <button type="button" class="btn btn-outline-danger btn-float" data-reset-select="">
+      <i class="mdi mdi-backspace"></i> Reset
+    </button>
+    <button type="submit" class="btn btn-primary">
+      <i class="mdi mdi-magnify"></i> Search
+    </button>
+  </div>
+</form>
+
+    </div>
+  
+
+
+            
+
+          </div>
+        </div>
+      
+      
+
+      
+      
+      
+
+      
+      
+
+      </div>
+
+      
+      <footer class="footer footer-transparent d-print-none py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          
+
+            
+            <ul class="list-inline mb-0 fs-2">
+              
+                
+                <li class="list-inline-item">
+                  <a href="http://192.168.206.139:8000/static/docs/" target="_blank" class="link-secondary" rel="noopener" aria-label="Docs">
+                    <i class="mdi mdi-book-open-variant text-primary" data-bs-placement="top" data-bs-toggle="tooltip" aria-label="Docs" data-bs-original-title="Docs"></i>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a href="http://192.168.206.139:8000/api/" target="_blank" class="link-secondary" rel="noopener" aria-label="REST API">
+                    <i class="mdi mdi-cloud-braces text-primary" data-bs-placement="top" data-bs-toggle="tooltip" aria-label="REST API" data-bs-original-title="REST API"></i>
+                  </a>
+                </li>
+                
+                <li class="list-inline-item">
+                  <a href="http://192.168.206.139:8000/api/schema/swagger-ui/" target="_blank" class="link-secondary" rel="noopener" aria-label="REST API documentation">
+                    <i class="mdi mdi-book text-primary" data-bs-placement="top" data-bs-toggle="tooltip" aria-label="REST API documentation" data-bs-original-title="REST API documentation"></i>
+                  </a>
+                </li>
+                
+                
+                  <li class="list-inline-item">
+                    <a href="http://192.168.206.139:8000/graphql/" target="_blank" class="link-secondary" rel="noopener" aria-label="GraphQL API">
+                      <i class="mdi mdi-graphql text-primary" data-bs-placement="top" data-bs-toggle="tooltip" aria-label="GraphQL API" data-bs-original-title="GraphQL API"></i>
+                    </a>
+                  </li>
+                
+
+                
+                
+                  
+                  <li class="list-inline-item">
+                    <a href="https://github.com/netbox-community/netbox" target="_blank" class="link-secondary" rel="noopener" aria-label="Source Code">
+                      <i class="mdi mdi-github text-primary" data-bs-placement="top" data-bs-toggle="tooltip" aria-label="Source Code" data-bs-original-title="Source Code"></i>
+                    </a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a href="https://netdev.chat/" target="_blank" class="link-secondary" rel="noopener" aria-label="Community">
+                      <i class="mdi mdi-slack text-primary" data-bs-placement="top" data-bs-toggle="tooltip" aria-label="Community" data-bs-original-title="Community"></i>
+                    </a>
+                  </li>
+                
+              
+            </ul>
+            
+
+            
+            <ul class="list-inline list-inline-dots fs-5 mb-0" id="footer-stamp" hx-swap-oob="true">
+              <li class="list-inline-item">2025-07-27 04:51:26 UTC</li>
+              <li class="list-inline-item">769faf36d4d2</li>
+            </ul>
+            
+
+          
+        </div>
+      </footer>
+      
+
+    
+    </div>
+
+  </div>
+
+
+    
+    
+
+    
+    
+
+<div id="django-messages" class="toast-container position-fixed bottom-0 end-0 p-3" hx-swap-oob="true">
+
+  
+  
+
+  
+  
+
+</div>
+
+
+  
+
+</body></html>
